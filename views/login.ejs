@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class=" flex items-center justify-center h-screen bg-zinc-900 w-full">
+            <div class=" flex flex-col justify-center items-center h-90  w-80 border-1 border-zinc-700 rounded-xl">
+
+        <h1 class="p-5 text-4xl text-bold text-white font-semibold">Login</h1>
+         <form class="p-5 flex w-full flex-wrap gap-5 text-zinc-400" action="/login" method="post">
+            <input  class="outline-none p-2 border-1 rounded-lg border-zinc-800 w-full " type="email" name="email" placeholder="email">
+            <input  class="outline-none p-2 border-1 rounded-lg border-zinc-800 w-full " type="password" name="password" placeholder="password">
+                                    <a class="bg-zinc-800 py-2 text-white rounded-lg w-full flex justify-center" href="/">Sign Up</a>
+
+             <input class="bg-blue-700 py-2 px-3 text-white rounded-lg w-full" type="submit" value="Login">
+
+        </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+ 
