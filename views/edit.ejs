@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="p-5 gap-5 flex flex-col justify-start items-start h-full lg:h-screen bg-zinc-900 w-full py-20">
+        <a href="/logout" class=" absolute top-27 right-10 bg-red-700 py-1 px-4 text-white rounded-lg"> Logout</a>
+        <h1 class=" text-4xl text-bold text-white font-bold"> Edit
+        </h1>
+        
+        <p class="text-zinc-700 py-2">All posts </p>
+        <div class=" h-full flex gap-3 flex-wrap ">
+
+               <form class="flex flex-wrap space-y-5 text-zinc-400" action="/update/<%= post._id %>" method="post">
+           
+                <textarea class="outline-none p-2 border-1 rounded-lg border-zinc-800 w-full " name="content" > <%= post.content %></textarea>
+            <input class="bg-blue-700 py-2 px-3 text-white rounded-lg w-full" type="submit" value="Update Post">
+        </form>
+        </div>
+    </div>
+</body>
+
+</html>
